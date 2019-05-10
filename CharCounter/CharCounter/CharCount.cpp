@@ -20,6 +20,7 @@ string GetFoundChars(char input[]) {
       // if (input[i] not in foundChars)
          if ( (foundChars[j] == '\0') || (input[i] != foundChars[j]) ) {
             foundChars = foundChars + input[i];
+            cout << "   Current: " << foundChars << endl;
          }
       }
    }
@@ -29,6 +30,8 @@ string GetFoundChars(char input[]) {
 
 
 int main() {
+   char input[] = "aba";
+   GetFoundChars(input);
 
    return 0;
 }
